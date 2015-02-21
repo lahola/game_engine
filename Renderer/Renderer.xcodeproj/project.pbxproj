@@ -1,0 +1,223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0534AEE21931137E008E76CD /* Renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0534AEE11931137E008E76CD /* Renderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0534AEE41931139C008E76CD /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0534AEE31931139C008E76CD /* Renderer.cpp */; };
+		05DA17FE1931508F00749568 /* Simple.frag in Sources */ = {isa = PBXBuildFile; fileRef = 05DA17FC1931508F00749568 /* Simple.frag */; };
+		05FF46D71931514F00416539 /* Simple.vert in Sources */ = {isa = PBXBuildFile; fileRef = 05FF46D61931514F00416539 /* Simple.vert */; };
+		05FF46DC1931545100416539 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FF46DB1931545100416539 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0534AEDA1931130B008E76CD /* libRenderer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRenderer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0534AEE11931137E008E76CD /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		0534AEE31931139C008E76CD /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		05DA17FC1931508F00749568 /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Simple.frag; path = Shaders/Simple.frag; sourceTree = "<group>"; };
+		05FF46D61931514F00416539 /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Simple.vert; path = Shaders/Simple.vert; sourceTree = "<group>"; };
+		05FF46DB1931545100416539 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0534AED71931130B008E76CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FF46DC1931545100416539 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0534AECF1931130B008E76CD = {
+			isa = PBXGroup;
+			children = (
+				05FF46DB1931545100416539 /* OpenGLES.framework */,
+				05DA18011931509500749568 /* New Group */,
+				0534AEE31931139C008E76CD /* Renderer.cpp */,
+				0534AEE11931137E008E76CD /* Renderer.h */,
+				0534AEDB1931130B008E76CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0534AEDB1931130B008E76CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0534AEDA1931130B008E76CD /* libRenderer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05DA18011931509500749568 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				05FF46D61931514F00416539 /* Simple.vert */,
+				05DA17FC1931508F00749568 /* Simple.frag */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0534AED81931130B008E76CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0534AEE21931137E008E76CD /* Renderer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0534AED91931130B008E76CD /* Renderer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0534AEDE1931130B008E76CD /* Build configuration list for PBXNativeTarget "Renderer" */;
+			buildPhases = (
+				0534AED61931130B008E76CD /* Sources */,
+				0534AED71931130B008E76CD /* Frameworks */,
+				0534AED81931130B008E76CD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Renderer;
+			productName = Renderer;
+			productReference = 0534AEDA1931130B008E76CD /* libRenderer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0534AED11931130B008E76CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 0534AED41931130B008E76CD /* Build configuration list for PBXProject "Renderer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0534AECF1931130B008E76CD;
+			productRefGroup = 0534AEDB1931130B008E76CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0534AED91931130B008E76CD /* Renderer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0534AED61931130B008E76CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0534AEE41931139C008E76CD /* Renderer.cpp in Sources */,
+				05DA17FE1931508F00749568 /* Simple.frag in Sources */,
+				05FF46D71931514F00416539 /* Simple.vert in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0534AEDC1931130B008E76CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0534AEDD1931130B008E76CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0534AEDF1931130B008E76CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.0;
+			};
+			name = Debug;
+		};
+		0534AEE01931130B008E76CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0534AED41931130B008E76CD /* Build configuration list for PBXProject "Renderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0534AEDC1931130B008E76CD /* Debug */,
+				0534AEDD1931130B008E76CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0534AEDE1931130B008E76CD /* Build configuration list for PBXNativeTarget "Renderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0534AEDF1931130B008E76CD /* Debug */,
+				0534AEE01931130B008E76CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0534AED11931130B008E76CD /* Project object */;
+}
